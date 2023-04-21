@@ -15,9 +15,25 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run prettier && npm run lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexfullbrazil/afb-react-svg.git"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "svg"
+  ],
+  "author": "AlexFull Brazil (alexfullbrazil)",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "devDependencies": {
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.1",
