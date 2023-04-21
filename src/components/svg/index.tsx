@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React from 'react'
 import { ReactSVG } from 'react-svg'
 
 import { IconWrapper } from './styles'
@@ -11,7 +11,7 @@ export interface IconProps {
   color?: string
   background?: string
   backgroundHover?: string
-  fileHover?: string
+  colorHover?: string
   cursor?: string
   borderRadius?: number
   marginTop?: number
@@ -21,7 +21,6 @@ export interface IconProps {
   width?: number
   height?: number
   size?: number
-  children?: ReactNode
 }
 
 export default function Svg({
@@ -32,7 +31,7 @@ export default function Svg({
   color,
   background,
   backgroundHover,
-  fileHover,
+  colorHover,
   cursor,
   borderRadius,
   marginTop,
@@ -42,7 +41,6 @@ export default function Svg({
   width,
   height,
   size,
-  children,
 }: IconProps) {
   return (
     <IconWrapper
@@ -57,7 +55,7 @@ export default function Svg({
       color={color}
       background={background}
       backgroundHover={backgroundHover}
-      fileHover={fileHover}
+      colorHover={colorHover}
       borderRadius={borderRadius}
       marginTop={marginTop}
       marginRight={marginRight}
@@ -65,7 +63,6 @@ export default function Svg({
       marginLeft={marginLeft}
     >
       <ReactSVG wrapper='span' src={src} />
-      {children}
     </IconWrapper>
   )
 }
