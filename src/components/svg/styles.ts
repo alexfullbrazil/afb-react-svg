@@ -26,7 +26,7 @@ export const IconWrapper = styled.div<IconProps>`
 
     svg {
       path {
-        fill: ${(props) => (props.fileHover ? props.fileHover : '')};
+        fill: ${(props) => (props.colorHover ? props.colorHover : '')};
       }
     }
   }
