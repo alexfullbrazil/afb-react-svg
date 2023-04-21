@@ -1,1 +1,0 @@
-## AlexFull Brazil ReactSVG
