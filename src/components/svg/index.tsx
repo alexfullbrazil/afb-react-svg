@@ -45,7 +45,6 @@ export default function Svg({
   return (
     <IconWrapper
       onClick={onClick}
-      aria-label={src}
       cursor={cursor}
       width={width}
       height={height}
